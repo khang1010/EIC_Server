@@ -6,9 +6,10 @@ Image Captioning có thể cung cấp trải nghiệm tương tác mới mẻ ch
 
 Hướng dẫn này giúp bạn cài đặt và chạy dự án trên máy tính của mình.
 
-### Yêu Cầu
+### Yêu Cầu hệ thống
 
 - [Python](https://www.python.org) đã được cài đặt trên máy tính của bạn.
+- Flask
 
 ### Bước 1: Sao chép mã nguồn
 
@@ -29,9 +30,14 @@ cd EIC_Server
 Cài đặt các dependencies bằng pip:
 
 ```shell
+pip install numpy
+```
+```shell
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+```
+```shell
 pip install -r requirements.txt
 ```
-
 ### Bước 3: Cấu hình
 
 Cấu hình dự án của bạn (nếu có) bằng cách chỉnh sửa các tệp tin cấu hình cần thiết.
@@ -41,7 +47,7 @@ Cấu hình dự án của bạn (nếu có) bằng cách chỉnh sửa các t�
 Chạy dự án bằng lệnh:
 
 ```shell
-python main.py
+flask run
 ```
 
 Dự án sẽ chạy trên máy tính của bạn và bạn có thể truy cập nó từ trình duyệt với URL: `http://localhost:3000`.
@@ -55,3 +61,8 @@ Nếu bạn muốn đóng góp vào dự án, hãy làm theo các bước sau:
 3. Commit các thay đổi của bạn (`git commit -am 'Add some feature'`)
 4. Push nhánh của bạn lên GitHub (`git push origin feature/your-feature`)
 5. Tạo một yêu cầu kéo mới trên GitHub
+
+## Tác giả
+
+- Tên tác giả: Nguyen Tuan Khang
+- Email: 21520963@gm.uit.edu.vn
