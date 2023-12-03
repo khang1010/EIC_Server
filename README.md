@@ -38,6 +38,18 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ```shell
 pip install -r requirements.txt
 ```
+Nếu gặp lỗi "Failed to build pycocotools" bạn hãy xử lý như sau:
+1. Vào file requirement.txt
+2. Xóa thông tin phiên bản sau pycocotools
+3. Chạy lại câu lệnh:
+```shell
+pip install -r requirements.txt
+```
+
+```shell
+pip install open_clip_torch
+```
+
 ### Bước 3: Cấu hình
 
 Cấu hình dự án của bạn (nếu có) bằng cách chỉnh sửa các tệp tin cấu hình cần thiết.
@@ -50,8 +62,8 @@ Chạy dự án bằng lệnh:
 flask run
 ```
 
-Dự án sẽ chạy trên máy tính của bạn và bạn có thể truy cập nó từ trình duyệt với URL: `http://localhost:3000`.
-
+- Dự án sẽ chạy trên máy tính của bạn và bạn có thể truy cập API với URL: `http://localhost:5000`.
+- Để nhận được caption của hình ảnh bạn hãy gọi API với phương thức POST với URL: `http://localhost:5000/predict` và truyền ảnh vào body dưới dạng form-data, thông tin trả về sẽ là đoạn caption dành cho bức ảnh đó.
 ## Đóng góp
 
 Nếu bạn muốn đóng góp vào dự án, hãy làm theo các bước sau:
