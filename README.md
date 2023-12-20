@@ -10,6 +10,7 @@ Hướng dẫn này giúp bạn cài đặt và chạy dự án trên máy tính
 
 - [Python](https://www.python.org) đã được cài đặt trên máy tính của bạn.
 - Flask
+- Window SDK
 
 ### Bước 1: Sao chép mã nguồn
 
